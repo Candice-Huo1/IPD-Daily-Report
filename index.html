@@ -1,253 +1,815 @@
-Project Due Task Report
-IPD HR & Admin Project Tracker · Next 3 Days: 2026-06-12 to 2026-06-14 · Generated: 2026-06-11 18:37
-2026-06-11
-Due Today
-0
-Tasks due on report date
-Due in Next 3 Days
-3
-Upcoming tasks
-Overdue & Open
-8
-Needs follow-up
-All
-Overdue
-Due Today
-Next 3 Days
-Ying
-Zion
-Irene
-Candice
-Dome
-HQ HR Team
-Committee
-Overview Table
-Use the filters above to update both the table and cards
-Type	Task ID	Project	Task	Supporter	Deadline	Status
-Overdue	LEAN-02	Lean Organization	Launch Individual Communication	HR Team	2026-05-25	In Progress
-Overdue	SAL-02	Salary Structure	Review All Salary and Benefits Detail	Ying / Irene	2026-05-31	In Progress
-Overdue	PG-02	Position Grading	Draft New Grading Structure	Ying / Irene	2026-06-05	In Progress
-Overdue	ZEN-06	Zenian Promotion	Release Assessment Result	Committee / HQ HR Team	2026-06-05	In Progress
-Overdue	PROB-03	Probation Tracking	Follow up employees/managers to submit probation goals in OA	Zion / Candice / Irene / Dome	2026-06-06	In Progress
-Overdue	PG-03	Position Grading	Finalize Grading Framework	Ying / Irene	2026-06-08	Not Started
-Overdue	ZEN-07	Zenian Promotion	Evaluation Results Announcement	HQ HR Team	2026-06-08	Not Started
-Overdue	PG-04	Position Grading	IPD Management Approval	Ying	2026-06-10	Not Started
-Next 3 Days	PPC-03	PPC	IPD PPC Draft & Approved	Ying	2026-06-12	In Progress
-Next 3 Days	PROB-04	Probation Tracking	Track probation progress regularly and maintain reminders	Zion / Candice / Irene / Dome	2026-06-12	Not Started
-Next 3 Days	PG-05	Position Grading	Corporate Management Approval & Documentation	Ying	2026-06-13	Not Started
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Due Task Report 2026-06-11</title>
+  <style>
+    :root {
+      --ink: #1e293b;
+      --muted: #64748b;
+      --line: #dbe3ef;
+      --bg: #f6f8fb;
+      --panel: #ffffff;
+      --red: #dc2626;
+      --red-bg: #fff1f2;
+      --amber: #b45309;
+      --amber-bg: #fffbeb;
+      --green: #047857;
+      --green-bg: #ecfdf5;
+      --blue: #2563eb;
+      --blue-bg: #eff6ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: linear-gradient(180deg, #eef4ff 0, var(--bg) 280px);
+      font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+    }
+    main {
+      width: min(1180px, calc(100vw - 28px));
+      margin: 0 auto;
+      padding: 26px 0 42px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: end;
+      margin-bottom: 18px;
+    }
+    h1 { margin: 0 0 8px; font-size: 30px; line-height: 1.15; }
+    .sub { color: var(--muted); font-size: 14px; }
+    .date-pill {
+      background: #111827;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-align: right;
+      box-shadow: 0 12px 24px rgba(15, 23, 42, .14);
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 18px 0;
+    }
+    .stat {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 8px;
+      padding: 16px;
+      min-height: 104px;
+    }
+    .stat b { display: block; font-size: 34px; line-height: 1; margin: 6px 0; }
+    .stat small { color: var(--muted); }
+    .stat.overdue b { color: var(--red); }
+    .stat.today b { color: var(--blue); }
+    .stat.future3 b { color: var(--amber); }
+    .toolbar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 18px 0 12px;
+    }
+    button {
+      border: 1px solid var(--line);
+      background: white;
+      color: var(--ink);
+      border-radius: 8px;
+      padding: 9px 12px;
+      cursor: pointer;
+      font: inherit;
+    }
+    button.active { border-color: #111827; background: #111827; color: white; }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 14px 30px rgba(15, 23, 42, .08);
+    }
+    .panel-title {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+    }
+    .panel-title h2 { margin: 0; font-size: 18px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { padding: 11px 12px; border-bottom: 1px solid #edf1f7; text-align: left; vertical-align: top; }
+    th { color: #475569; background: #f8fafc; font-size: 12px; }
+    tr:last-child td { border-bottom: none; }
+    .strong { font-weight: 700; }
+    .tag, .mini {
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .tag.overdue, .mini.overdue { color: var(--red); background: var(--red-bg); }
+    .tag.today, .mini.today { color: var(--blue); background: var(--blue-bg); }
+    .tag.future3, .mini.future3 { color: var(--amber); background: var(--amber-bg); }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .person-card {
+      border: 1px solid var(--line);
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .person-head {
+      width: 100%;
+      border: 0;
+      border-radius: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      text-align: left;
+      background: #ffffff;
+    }
+    .person-head b { display: block; font-size: 18px; }
+    .person-head small { color: var(--muted); }
+    .chips { display: flex; gap: 5px; flex-wrap: wrap; justify-content: flex-end; }
+    .person-body { padding: 0 12px 12px; display: grid; gap: 10px; }
+    .person-card.collapsed .person-body { display: none; }
+    .task-card {
+      border: 1px solid #e6edf7;
+      border-left: 5px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      background: #fbfdff;
+    }
+    .task-card.overdue { border-left-color: var(--red); background: linear-gradient(90deg, var(--red-bg), #fff); }
+    .task-card.today { border-left-color: var(--blue); background: linear-gradient(90deg, var(--blue-bg), #fff); }
+    .task-card.future3 { border-left-color: var(--amber); background: linear-gradient(90deg, var(--amber-bg), #fff); }
+    .task-top, .meta { display: flex; justify-content: space-between; gap: 10px; align-items: center; }
+    .task-id { font-weight: 800; letter-spacing: .2px; }
+    .task-card h3 { margin: 10px 0 6px; font-size: 15px; line-height: 1.35; }
+    .task-card p { margin: 0 0 10px; color: var(--muted); }
+    .meta { color: #475569; font-size: 12px; flex-wrap: wrap; }
+    .empty { color: var(--muted); text-align: center; padding: 24px; }
+    .hidden { display: none !important; }
+    @media (max-width: 760px) {
+      main { width: min(100vw - 18px, 1180px); padding-top: 14px; }
+      header { grid-template-columns: 1fr; }
+      h1 { font-size: 24px; }
+      .date-pill { text-align: left; }
+      .stats, .cards { grid-template-columns: 1fr; }
+      .panel { overflow-x: auto; }
+      table { min-width: 900px; }
+    }
+    @media print {
+      body { background: white; }
+      main { width: 100%; padding: 0; }
+      button { display: none; }
+      .panel, .person-card, .stat { box-shadow: none; }
+      .cards { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>Project Due Task Report</h1>
+        <div class="sub">IPD HR & Admin Project Tracker ? Next 3 Days: 2026-06-12 to 2026-06-14 ? Generated: 2026-06-11 18:37</div>
+      </div>
+      <div class="date-pill">2026-06-11</div>
+    </header>
 
-Ying
-7 tasks
-Overdue
-Overdue
-Overdue
-Overdue
-LEAN-02
-Overdue
-Launch Individual Communication
-Lean Organization
+    <section class="stats">
+      <div class="stat today"><small>Due Today</small><b>0</b><small>Tasks due on report date</small></div>
+      <div class="stat future3"><small>Due in Next 3 Days</small><b>3</b><small>Upcoming tasks</small></div>
+      <div class="stat overdue"><small>Overdue & Open</small><b>8</b><small>Needs follow-up</small></div>
+    </section>
 
-Deadline: 2026-05-25
-Status: In Progress
-SAL-02
-Overdue
-Review All Salary and Benefits Detail
-Salary Structure
+    <div class="toolbar" aria-label="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="overdue">Overdue</button>
+      <button class="filter" data-filter="today">Due Today</button>
+      <button class="filter" data-filter="future3">Next 3 Days</button>
+      <button class="filter" data-filter="ying">Ying</button>
+<button class="filter" data-filter="zion">Zion</button>
+<button class="filter" data-filter="irene">Irene</button>
+<button class="filter" data-filter="candice">Candice</button>
+<button class="filter" data-filter="dome">Dome</button>
+<button class="filter" data-filter="hq-hr-team">HQ HR Team</button>
+<button class="filter" data-filter="committee">Committee</button>
+    </div>
 
-Deadline: 2026-05-31
-Status: In Progress
-PG-02
-Overdue
-Draft New Grading Structure
-Position Grading
+    <section class="panel">
+      <div class="panel-title">
+        <h2>Overview Table</h2>
+        <span class="sub">Use the filters above to update both the table and cards</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Task ID</th>
+            <th>Project</th>
+            <th>Task</th>
+            <th>Supporter</th>
+            <th>Deadline</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr data-bucket="overdue" data-people="ying zion irene candice dome">
+          <td><span class="tag overdue">Overdue</span></td>
+          <td class="strong">LEAN-02</td>
+          <td>Lean Organization</td>
+          <td>Launch Individual Communication</td>
+          <td>HR Team</td>
+          <td>2026-05-25</td>
+          <td>In Progress</td>
+        </tr>
+        
 
-Deadline: 2026-06-05
-Status: In Progress
-PG-03
-Overdue
-Finalize Grading Framework
-Position Grading
+        <tr data-bucket="overdue" data-people="ying irene">
+          <td><span class="tag overdue">Overdue</span></td>
+          <td class="strong">SAL-02</td>
+          <td>Salary Structure</td>
+          <td>Review All Salary and Benefits Detail</td>
+          <td>Ying / Irene</td>
+          <td>2026-05-31</td>
+          <td>In Progress</td>
+        </tr>
+        
 
-Deadline: 2026-06-08
-Status: Not Started
-PG-04
-Overdue
-IPD Management Approval
-Position Grading
+        <tr data-bucket="overdue" data-people="ying irene">
+          <td><span class="tag overdue">Overdue</span></td>
+          <td class="strong">PG-02</td>
+          <td>Position Grading</td>
+          <td>Draft New Grading Structure</td>
+          <td>Ying / Irene</td>
+          <td>2026-06-05</td>
+          <td>In Progress</td>
+        </tr>
+        
 
-Deadline: 2026-06-10
-Status: Not Started
-PPC-03
-Next 3 Days
-IPD PPC Draft & Approved
-PPC
+        <tr data-bucket="overdue" data-people="hq-hr-team committee">
+          <td><span class="tag overdue">Overdue</span></td>
+          <td class="strong">ZEN-06</td>
+          <td>Zenian Promotion</td>
+          <td>Release Assessment Result</td>
+          <td>Committee / HQ HR Team</td>
+          <td>2026-06-05</td>
+          <td>In Progress</td>
+        </tr>
+        
 
-Deadline: 2026-06-12
-Status: In Progress
-PG-05
-Next 3 Days
-Corporate Management Approval & Documentation
-Position Grading
+        <tr data-bucket="overdue" data-people="zion irene candice dome">
+          <td><span class="tag overdue">Overdue</span></td>
+          <td class="strong">PROB-03</td>
+          <td>Probation Tracking</td>
+          <td>Follow up employees/managers to submit probation goals in OA</td>
+          <td>Zion / Candice / Irene / Dome</td>
+          <td>2026-06-06</td>
+          <td>In Progress</td>
+        </tr>
+        
 
-Deadline: 2026-06-13
-Status: Not Started
+        <tr data-bucket="overdue" data-people="ying irene">
+          <td><span class="tag overdue">Overdue</span></td>
+          <td class="strong">PG-03</td>
+          <td>Position Grading</td>
+          <td>Finalize Grading Framework</td>
+          <td>Ying / Irene</td>
+          <td>2026-06-08</td>
+          <td>Not Started</td>
+        </tr>
+        
 
-Zion
-3 tasks
-Overdue
-Overdue
-Next 3 Days
-LEAN-02
-Overdue
-Launch Individual Communication
-Lean Organization
+        <tr data-bucket="overdue" data-people="hq-hr-team">
+          <td><span class="tag overdue">Overdue</span></td>
+          <td class="strong">ZEN-07</td>
+          <td>Zenian Promotion</td>
+          <td>Evaluation Results Announcement</td>
+          <td>HQ HR Team</td>
+          <td>2026-06-08</td>
+          <td>Not Started</td>
+        </tr>
+        
 
-Deadline: 2026-05-25
-Status: In Progress
-PROB-03
-Overdue
-Follow up employees/managers to submit probation goals in OA
-Probation Tracking
+        <tr data-bucket="overdue" data-people="ying">
+          <td><span class="tag overdue">Overdue</span></td>
+          <td class="strong">PG-04</td>
+          <td>Position Grading</td>
+          <td>IPD Management Approval</td>
+          <td>Ying</td>
+          <td>2026-06-10</td>
+          <td>Not Started</td>
+        </tr>
+        
 
-Deadline: 2026-06-06
-Status: In Progress
-PROB-04
-Next 3 Days
-Track probation progress regularly and maintain reminders
-Probation Tracking
+        <tr data-bucket="future3" data-people="ying">
+          <td><span class="tag future3">Next 3 Days</span></td>
+          <td class="strong">PPC-03</td>
+          <td>PPC</td>
+          <td>IPD PPC Draft &amp; Approved</td>
+          <td>Ying</td>
+          <td>2026-06-12</td>
+          <td>In Progress</td>
+        </tr>
+        
 
-Deadline: 2026-06-12
-Status: Not Started
+        <tr data-bucket="future3" data-people="zion irene candice dome">
+          <td><span class="tag future3">Next 3 Days</span></td>
+          <td class="strong">PROB-04</td>
+          <td>Probation Tracking</td>
+          <td>Track probation progress regularly and maintain reminders</td>
+          <td>Zion / Candice / Irene / Dome</td>
+          <td>2026-06-12</td>
+          <td>Not Started</td>
+        </tr>
+        
 
-Irene
-6 tasks
-Overdue
-Overdue
-Overdue
-Overdue
-LEAN-02
-Overdue
-Launch Individual Communication
-Lean Organization
+        <tr data-bucket="future3" data-people="ying">
+          <td><span class="tag future3">Next 3 Days</span></td>
+          <td class="strong">PG-05</td>
+          <td>Position Grading</td>
+          <td>Corporate Management Approval &amp; Documentation</td>
+          <td>Ying</td>
+          <td>2026-06-13</td>
+          <td>Not Started</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
 
-Deadline: 2026-05-25
-Status: In Progress
-SAL-02
-Overdue
-Review All Salary and Benefits Detail
-Salary Structure
+    <section class="cards">
+      
+            <section class="person-card" data-person="ying">
+              <button class="person-head" type="button">
+                <span>
+                  <b>Ying</b>
+                  <small>7 tasks</small>
+                </span>
+                <span class="chips"><span class="mini overdue">Overdue</span><span class="mini overdue">Overdue</span><span class="mini overdue">Overdue</span><span class="mini overdue">Overdue</span></span>
+              </button>
+              <div class="person-body">
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">LEAN-02</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Launch Individual Communication</h3>
+              <p>Lean Organization</p>
+              <div class="meta">
+                <span>Deadline: 2026-05-25</span>
+                <span>Status: In Progress</span>
+              </div>
+            </article>
+            
 
-Deadline: 2026-05-31
-Status: In Progress
-PG-02
-Overdue
-Draft New Grading Structure
-Position Grading
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">SAL-02</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Review All Salary and Benefits Detail</h3>
+              <p>Salary Structure</p>
+              <div class="meta">
+                <span>Deadline: 2026-05-31</span>
+                <span>Status: In Progress</span>
+              </div>
+            </article>
+            
 
-Deadline: 2026-06-05
-Status: In Progress
-PROB-03
-Overdue
-Follow up employees/managers to submit probation goals in OA
-Probation Tracking
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">PG-02</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Draft New Grading Structure</h3>
+              <p>Position Grading</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-05</span>
+                <span>Status: In Progress</span>
+              </div>
+            </article>
+            
 
-Deadline: 2026-06-06
-Status: In Progress
-PG-03
-Overdue
-Finalize Grading Framework
-Position Grading
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">PG-03</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Finalize Grading Framework</h3>
+              <p>Position Grading</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-08</span>
+                <span>Status: Not Started</span>
+              </div>
+            </article>
+            
 
-Deadline: 2026-06-08
-Status: Not Started
-PROB-04
-Next 3 Days
-Track probation progress regularly and maintain reminders
-Probation Tracking
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">PG-04</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>IPD Management Approval</h3>
+              <p>Position Grading</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-10</span>
+                <span>Status: Not Started</span>
+              </div>
+            </article>
+            
 
-Deadline: 2026-06-12
-Status: Not Started
+            <article class="task-card future3">
+              <div class="task-top">
+                <span class="task-id">PPC-03</span>
+                <span class="tag future3">Next 3 Days</span>
+              </div>
+              <h3>IPD PPC Draft &amp; Approved</h3>
+              <p>PPC</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-12</span>
+                <span>Status: In Progress</span>
+              </div>
+            </article>
+            
 
-Candice
-3 tasks
-Overdue
-Overdue
-Next 3 Days
-LEAN-02
-Overdue
-Launch Individual Communication
-Lean Organization
+            <article class="task-card future3">
+              <div class="task-top">
+                <span class="task-id">PG-05</span>
+                <span class="tag future3">Next 3 Days</span>
+              </div>
+              <h3>Corporate Management Approval &amp; Documentation</h3>
+              <p>Position Grading</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-13</span>
+                <span>Status: Not Started</span>
+              </div>
+            </article>
+            </div>
+            </section>
+            
+            <section class="person-card" data-person="zion">
+              <button class="person-head" type="button">
+                <span>
+                  <b>Zion</b>
+                  <small>3 tasks</small>
+                </span>
+                <span class="chips"><span class="mini overdue">Overdue</span><span class="mini overdue">Overdue</span><span class="mini future3">Next 3 Days</span></span>
+              </button>
+              <div class="person-body">
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">LEAN-02</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Launch Individual Communication</h3>
+              <p>Lean Organization</p>
+              <div class="meta">
+                <span>Deadline: 2026-05-25</span>
+                <span>Status: In Progress</span>
+              </div>
+            </article>
+            
 
-Deadline: 2026-05-25
-Status: In Progress
-PROB-03
-Overdue
-Follow up employees/managers to submit probation goals in OA
-Probation Tracking
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">PROB-03</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Follow up employees/managers to submit probation goals in OA</h3>
+              <p>Probation Tracking</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-06</span>
+                <span>Status: In Progress</span>
+              </div>
+            </article>
+            
 
-Deadline: 2026-06-06
-Status: In Progress
-PROB-04
-Next 3 Days
-Track probation progress regularly and maintain reminders
-Probation Tracking
+            <article class="task-card future3">
+              <div class="task-top">
+                <span class="task-id">PROB-04</span>
+                <span class="tag future3">Next 3 Days</span>
+              </div>
+              <h3>Track probation progress regularly and maintain reminders</h3>
+              <p>Probation Tracking</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-12</span>
+                <span>Status: Not Started</span>
+              </div>
+            </article>
+            </div>
+            </section>
+            
+            <section class="person-card" data-person="irene">
+              <button class="person-head" type="button">
+                <span>
+                  <b>Irene</b>
+                  <small>6 tasks</small>
+                </span>
+                <span class="chips"><span class="mini overdue">Overdue</span><span class="mini overdue">Overdue</span><span class="mini overdue">Overdue</span><span class="mini overdue">Overdue</span></span>
+              </button>
+              <div class="person-body">
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">LEAN-02</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Launch Individual Communication</h3>
+              <p>Lean Organization</p>
+              <div class="meta">
+                <span>Deadline: 2026-05-25</span>
+                <span>Status: In Progress</span>
+              </div>
+            </article>
+            
 
-Deadline: 2026-06-12
-Status: Not Started
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">SAL-02</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Review All Salary and Benefits Detail</h3>
+              <p>Salary Structure</p>
+              <div class="meta">
+                <span>Deadline: 2026-05-31</span>
+                <span>Status: In Progress</span>
+              </div>
+            </article>
+            
 
-Dome
-3 tasks
-Overdue
-Overdue
-Next 3 Days
-LEAN-02
-Overdue
-Launch Individual Communication
-Lean Organization
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">PG-02</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Draft New Grading Structure</h3>
+              <p>Position Grading</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-05</span>
+                <span>Status: In Progress</span>
+              </div>
+            </article>
+            
 
-Deadline: 2026-05-25
-Status: In Progress
-PROB-03
-Overdue
-Follow up employees/managers to submit probation goals in OA
-Probation Tracking
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">PROB-03</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Follow up employees/managers to submit probation goals in OA</h3>
+              <p>Probation Tracking</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-06</span>
+                <span>Status: In Progress</span>
+              </div>
+            </article>
+            
 
-Deadline: 2026-06-06
-Status: In Progress
-PROB-04
-Next 3 Days
-Track probation progress regularly and maintain reminders
-Probation Tracking
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">PG-03</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Finalize Grading Framework</h3>
+              <p>Position Grading</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-08</span>
+                <span>Status: Not Started</span>
+              </div>
+            </article>
+            
 
-Deadline: 2026-06-12
-Status: Not Started
+            <article class="task-card future3">
+              <div class="task-top">
+                <span class="task-id">PROB-04</span>
+                <span class="tag future3">Next 3 Days</span>
+              </div>
+              <h3>Track probation progress regularly and maintain reminders</h3>
+              <p>Probation Tracking</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-12</span>
+                <span>Status: Not Started</span>
+              </div>
+            </article>
+            </div>
+            </section>
+            
+            <section class="person-card" data-person="candice">
+              <button class="person-head" type="button">
+                <span>
+                  <b>Candice</b>
+                  <small>3 tasks</small>
+                </span>
+                <span class="chips"><span class="mini overdue">Overdue</span><span class="mini overdue">Overdue</span><span class="mini future3">Next 3 Days</span></span>
+              </button>
+              <div class="person-body">
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">LEAN-02</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Launch Individual Communication</h3>
+              <p>Lean Organization</p>
+              <div class="meta">
+                <span>Deadline: 2026-05-25</span>
+                <span>Status: In Progress</span>
+              </div>
+            </article>
+            
 
-HQ HR Team
-2 tasks
-Overdue
-Overdue
-ZEN-06
-Overdue
-Release Assessment Result
-Zenian Promotion
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">PROB-03</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Follow up employees/managers to submit probation goals in OA</h3>
+              <p>Probation Tracking</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-06</span>
+                <span>Status: In Progress</span>
+              </div>
+            </article>
+            
 
-Deadline: 2026-06-05
-Status: In Progress
-ZEN-07
-Overdue
-Evaluation Results Announcement
-Zenian Promotion
+            <article class="task-card future3">
+              <div class="task-top">
+                <span class="task-id">PROB-04</span>
+                <span class="tag future3">Next 3 Days</span>
+              </div>
+              <h3>Track probation progress regularly and maintain reminders</h3>
+              <p>Probation Tracking</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-12</span>
+                <span>Status: Not Started</span>
+              </div>
+            </article>
+            </div>
+            </section>
+            
+            <section class="person-card" data-person="dome">
+              <button class="person-head" type="button">
+                <span>
+                  <b>Dome</b>
+                  <small>3 tasks</small>
+                </span>
+                <span class="chips"><span class="mini overdue">Overdue</span><span class="mini overdue">Overdue</span><span class="mini future3">Next 3 Days</span></span>
+              </button>
+              <div class="person-body">
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">LEAN-02</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Launch Individual Communication</h3>
+              <p>Lean Organization</p>
+              <div class="meta">
+                <span>Deadline: 2026-05-25</span>
+                <span>Status: In Progress</span>
+              </div>
+            </article>
+            
 
-Deadline: 2026-06-08
-Status: Not Started
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">PROB-03</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Follow up employees/managers to submit probation goals in OA</h3>
+              <p>Probation Tracking</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-06</span>
+                <span>Status: In Progress</span>
+              </div>
+            </article>
+            
 
-Committee
-1 tasks
-Overdue
-ZEN-06
-Overdue
-Release Assessment Result
-Zenian Promotion
+            <article class="task-card future3">
+              <div class="task-top">
+                <span class="task-id">PROB-04</span>
+                <span class="tag future3">Next 3 Days</span>
+              </div>
+              <h3>Track probation progress regularly and maintain reminders</h3>
+              <p>Probation Tracking</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-12</span>
+                <span>Status: Not Started</span>
+              </div>
+            </article>
+            </div>
+            </section>
+            
+            <section class="person-card" data-person="hq-hr-team">
+              <button class="person-head" type="button">
+                <span>
+                  <b>HQ HR Team</b>
+                  <small>2 tasks</small>
+                </span>
+                <span class="chips"><span class="mini overdue">Overdue</span><span class="mini overdue">Overdue</span></span>
+              </button>
+              <div class="person-body">
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">ZEN-06</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Release Assessment Result</h3>
+              <p>Zenian Promotion</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-05</span>
+                <span>Status: In Progress</span>
+              </div>
+            </article>
+            
 
-Deadline: 2026-06-05
-Status: In Progress
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">ZEN-07</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Evaluation Results Announcement</h3>
+              <p>Zenian Promotion</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-08</span>
+                <span>Status: Not Started</span>
+              </div>
+            </article>
+            </div>
+            </section>
+            
+            <section class="person-card" data-person="committee">
+              <button class="person-head" type="button">
+                <span>
+                  <b>Committee</b>
+                  <small>1 tasks</small>
+                </span>
+                <span class="chips"><span class="mini overdue">Overdue</span></span>
+              </button>
+              <div class="person-body">
+            <article class="task-card overdue">
+              <div class="task-top">
+                <span class="task-id">ZEN-06</span>
+                <span class="tag overdue">Overdue</span>
+              </div>
+              <h3>Release Assessment Result</h3>
+              <p>Zenian Promotion</p>
+              <div class="meta">
+                <span>Deadline: 2026-06-05</span>
+                <span>Status: In Progress</span>
+              </div>
+            </article>
+            </div>
+            </section>
+            
+    </section>
+  </main>
+
+  <script type="application/json" id="report-data">{&quot;items&quot;: [{&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;LEAN-02&quot;, &quot;project&quot;: &quot;Lean Organization&quot;, &quot;task&quot;: &quot;Launch Individual Communication&quot;, &quot;supporter&quot;: &quot;HR Team&quot;, &quot;deadline&quot;: &quot;2026-05-25&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Ying&quot;, &quot;Zion&quot;, &quot;Irene&quot;, &quot;Candice&quot;, &quot;Dome&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;SAL-02&quot;, &quot;project&quot;: &quot;Salary Structure&quot;, &quot;task&quot;: &quot;Review All Salary and Benefits Detail&quot;, &quot;supporter&quot;: &quot;Ying / Irene&quot;, &quot;deadline&quot;: &quot;2026-05-31&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Ying&quot;, &quot;Irene&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;PG-02&quot;, &quot;project&quot;: &quot;Position Grading&quot;, &quot;task&quot;: &quot;Draft New Grading Structure&quot;, &quot;supporter&quot;: &quot;Ying / Irene&quot;, &quot;deadline&quot;: &quot;2026-06-05&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Ying&quot;, &quot;Irene&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;ZEN-06&quot;, &quot;project&quot;: &quot;Zenian Promotion&quot;, &quot;task&quot;: &quot;Release Assessment Result&quot;, &quot;supporter&quot;: &quot;Committee / HQ HR Team&quot;, &quot;deadline&quot;: &quot;2026-06-05&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;HQ HR Team&quot;, &quot;Committee&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;PROB-03&quot;, &quot;project&quot;: &quot;Probation Tracking&quot;, &quot;task&quot;: &quot;Follow up employees/managers to submit probation goals in OA&quot;, &quot;supporter&quot;: &quot;Zion / Candice / Irene / Dome&quot;, &quot;deadline&quot;: &quot;2026-06-06&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Zion&quot;, &quot;Irene&quot;, &quot;Candice&quot;, &quot;Dome&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;PG-03&quot;, &quot;project&quot;: &quot;Position Grading&quot;, &quot;task&quot;: &quot;Finalize Grading Framework&quot;, &quot;supporter&quot;: &quot;Ying / Irene&quot;, &quot;deadline&quot;: &quot;2026-06-08&quot;, &quot;status&quot;: &quot;Not Started&quot;, &quot;assignees&quot;: [&quot;Ying&quot;, &quot;Irene&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;ZEN-07&quot;, &quot;project&quot;: &quot;Zenian Promotion&quot;, &quot;task&quot;: &quot;Evaluation Results Announcement&quot;, &quot;supporter&quot;: &quot;HQ HR Team&quot;, &quot;deadline&quot;: &quot;2026-06-08&quot;, &quot;status&quot;: &quot;Not Started&quot;, &quot;assignees&quot;: [&quot;HQ HR Team&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;PG-04&quot;, &quot;project&quot;: &quot;Position Grading&quot;, &quot;task&quot;: &quot;IPD Management Approval&quot;, &quot;supporter&quot;: &quot;Ying&quot;, &quot;deadline&quot;: &quot;2026-06-10&quot;, &quot;status&quot;: &quot;Not Started&quot;, &quot;assignees&quot;: [&quot;Ying&quot;]}, {&quot;bucket&quot;: &quot;future3&quot;, &quot;task_id&quot;: &quot;PPC-03&quot;, &quot;project&quot;: &quot;PPC&quot;, &quot;task&quot;: &quot;IPD PPC Draft &amp; Approved&quot;, &quot;supporter&quot;: &quot;Ying&quot;, &quot;deadline&quot;: &quot;2026-06-12&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Ying&quot;]}, {&quot;bucket&quot;: &quot;future3&quot;, &quot;task_id&quot;: &quot;PROB-04&quot;, &quot;project&quot;: &quot;Probation Tracking&quot;, &quot;task&quot;: &quot;Track probation progress regularly and maintain reminders&quot;, &quot;supporter&quot;: &quot;Zion / Candice / Irene / Dome&quot;, &quot;deadline&quot;: &quot;2026-06-12&quot;, &quot;status&quot;: &quot;Not Started&quot;, &quot;assignees&quot;: [&quot;Zion&quot;, &quot;Irene&quot;, &quot;Candice&quot;, &quot;Dome&quot;]}, {&quot;bucket&quot;: &quot;future3&quot;, &quot;task_id&quot;: &quot;PG-05&quot;, &quot;project&quot;: &quot;Position Grading&quot;, &quot;task&quot;: &quot;Corporate Management Approval &amp; Documentation&quot;, &quot;supporter&quot;: &quot;Ying&quot;, &quot;deadline&quot;: &quot;2026-06-13&quot;, &quot;status&quot;: &quot;Not Started&quot;, &quot;assignees&quot;: [&quot;Ying&quot;]}], &quot;cards&quot;: {&quot;Ying&quot;: [{&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;LEAN-02&quot;, &quot;project&quot;: &quot;Lean Organization&quot;, &quot;task&quot;: &quot;Launch Individual Communication&quot;, &quot;supporter&quot;: &quot;HR Team&quot;, &quot;deadline&quot;: &quot;2026-05-25&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Ying&quot;, &quot;Zion&quot;, &quot;Irene&quot;, &quot;Candice&quot;, &quot;Dome&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;SAL-02&quot;, &quot;project&quot;: &quot;Salary Structure&quot;, &quot;task&quot;: &quot;Review All Salary and Benefits Detail&quot;, &quot;supporter&quot;: &quot;Ying / Irene&quot;, &quot;deadline&quot;: &quot;2026-05-31&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Ying&quot;, &quot;Irene&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;PG-02&quot;, &quot;project&quot;: &quot;Position Grading&quot;, &quot;task&quot;: &quot;Draft New Grading Structure&quot;, &quot;supporter&quot;: &quot;Ying / Irene&quot;, &quot;deadline&quot;: &quot;2026-06-05&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Ying&quot;, &quot;Irene&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;PG-03&quot;, &quot;project&quot;: &quot;Position Grading&quot;, &quot;task&quot;: &quot;Finalize Grading Framework&quot;, &quot;supporter&quot;: &quot;Ying / Irene&quot;, &quot;deadline&quot;: &quot;2026-06-08&quot;, &quot;status&quot;: &quot;Not Started&quot;, &quot;assignees&quot;: [&quot;Ying&quot;, &quot;Irene&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;PG-04&quot;, &quot;project&quot;: &quot;Position Grading&quot;, &quot;task&quot;: &quot;IPD Management Approval&quot;, &quot;supporter&quot;: &quot;Ying&quot;, &quot;deadline&quot;: &quot;2026-06-10&quot;, &quot;status&quot;: &quot;Not Started&quot;, &quot;assignees&quot;: [&quot;Ying&quot;]}, {&quot;bucket&quot;: &quot;future3&quot;, &quot;task_id&quot;: &quot;PPC-03&quot;, &quot;project&quot;: &quot;PPC&quot;, &quot;task&quot;: &quot;IPD PPC Draft &amp; Approved&quot;, &quot;supporter&quot;: &quot;Ying&quot;, &quot;deadline&quot;: &quot;2026-06-12&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Ying&quot;]}, {&quot;bucket&quot;: &quot;future3&quot;, &quot;task_id&quot;: &quot;PG-05&quot;, &quot;project&quot;: &quot;Position Grading&quot;, &quot;task&quot;: &quot;Corporate Management Approval &amp; Documentation&quot;, &quot;supporter&quot;: &quot;Ying&quot;, &quot;deadline&quot;: &quot;2026-06-13&quot;, &quot;status&quot;: &quot;Not Started&quot;, &quot;assignees&quot;: [&quot;Ying&quot;]}], &quot;Zion&quot;: [{&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;LEAN-02&quot;, &quot;project&quot;: &quot;Lean Organization&quot;, &quot;task&quot;: &quot;Launch Individual Communication&quot;, &quot;supporter&quot;: &quot;HR Team&quot;, &quot;deadline&quot;: &quot;2026-05-25&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Ying&quot;, &quot;Zion&quot;, &quot;Irene&quot;, &quot;Candice&quot;, &quot;Dome&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;PROB-03&quot;, &quot;project&quot;: &quot;Probation Tracking&quot;, &quot;task&quot;: &quot;Follow up employees/managers to submit probation goals in OA&quot;, &quot;supporter&quot;: &quot;Zion / Candice / Irene / Dome&quot;, &quot;deadline&quot;: &quot;2026-06-06&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Zion&quot;, &quot;Irene&quot;, &quot;Candice&quot;, &quot;Dome&quot;]}, {&quot;bucket&quot;: &quot;future3&quot;, &quot;task_id&quot;: &quot;PROB-04&quot;, &quot;project&quot;: &quot;Probation Tracking&quot;, &quot;task&quot;: &quot;Track probation progress regularly and maintain reminders&quot;, &quot;supporter&quot;: &quot;Zion / Candice / Irene / Dome&quot;, &quot;deadline&quot;: &quot;2026-06-12&quot;, &quot;status&quot;: &quot;Not Started&quot;, &quot;assignees&quot;: [&quot;Zion&quot;, &quot;Irene&quot;, &quot;Candice&quot;, &quot;Dome&quot;]}], &quot;Irene&quot;: [{&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;LEAN-02&quot;, &quot;project&quot;: &quot;Lean Organization&quot;, &quot;task&quot;: &quot;Launch Individual Communication&quot;, &quot;supporter&quot;: &quot;HR Team&quot;, &quot;deadline&quot;: &quot;2026-05-25&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Ying&quot;, &quot;Zion&quot;, &quot;Irene&quot;, &quot;Candice&quot;, &quot;Dome&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;SAL-02&quot;, &quot;project&quot;: &quot;Salary Structure&quot;, &quot;task&quot;: &quot;Review All Salary and Benefits Detail&quot;, &quot;supporter&quot;: &quot;Ying / Irene&quot;, &quot;deadline&quot;: &quot;2026-05-31&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Ying&quot;, &quot;Irene&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;PG-02&quot;, &quot;project&quot;: &quot;Position Grading&quot;, &quot;task&quot;: &quot;Draft New Grading Structure&quot;, &quot;supporter&quot;: &quot;Ying / Irene&quot;, &quot;deadline&quot;: &quot;2026-06-05&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Ying&quot;, &quot;Irene&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;PROB-03&quot;, &quot;project&quot;: &quot;Probation Tracking&quot;, &quot;task&quot;: &quot;Follow up employees/managers to submit probation goals in OA&quot;, &quot;supporter&quot;: &quot;Zion / Candice / Irene / Dome&quot;, &quot;deadline&quot;: &quot;2026-06-06&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Zion&quot;, &quot;Irene&quot;, &quot;Candice&quot;, &quot;Dome&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;PG-03&quot;, &quot;project&quot;: &quot;Position Grading&quot;, &quot;task&quot;: &quot;Finalize Grading Framework&quot;, &quot;supporter&quot;: &quot;Ying / Irene&quot;, &quot;deadline&quot;: &quot;2026-06-08&quot;, &quot;status&quot;: &quot;Not Started&quot;, &quot;assignees&quot;: [&quot;Ying&quot;, &quot;Irene&quot;]}, {&quot;bucket&quot;: &quot;future3&quot;, &quot;task_id&quot;: &quot;PROB-04&quot;, &quot;project&quot;: &quot;Probation Tracking&quot;, &quot;task&quot;: &quot;Track probation progress regularly and maintain reminders&quot;, &quot;supporter&quot;: &quot;Zion / Candice / Irene / Dome&quot;, &quot;deadline&quot;: &quot;2026-06-12&quot;, &quot;status&quot;: &quot;Not Started&quot;, &quot;assignees&quot;: [&quot;Zion&quot;, &quot;Irene&quot;, &quot;Candice&quot;, &quot;Dome&quot;]}], &quot;Candice&quot;: [{&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;LEAN-02&quot;, &quot;project&quot;: &quot;Lean Organization&quot;, &quot;task&quot;: &quot;Launch Individual Communication&quot;, &quot;supporter&quot;: &quot;HR Team&quot;, &quot;deadline&quot;: &quot;2026-05-25&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Ying&quot;, &quot;Zion&quot;, &quot;Irene&quot;, &quot;Candice&quot;, &quot;Dome&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;PROB-03&quot;, &quot;project&quot;: &quot;Probation Tracking&quot;, &quot;task&quot;: &quot;Follow up employees/managers to submit probation goals in OA&quot;, &quot;supporter&quot;: &quot;Zion / Candice / Irene / Dome&quot;, &quot;deadline&quot;: &quot;2026-06-06&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Zion&quot;, &quot;Irene&quot;, &quot;Candice&quot;, &quot;Dome&quot;]}, {&quot;bucket&quot;: &quot;future3&quot;, &quot;task_id&quot;: &quot;PROB-04&quot;, &quot;project&quot;: &quot;Probation Tracking&quot;, &quot;task&quot;: &quot;Track probation progress regularly and maintain reminders&quot;, &quot;supporter&quot;: &quot;Zion / Candice / Irene / Dome&quot;, &quot;deadline&quot;: &quot;2026-06-12&quot;, &quot;status&quot;: &quot;Not Started&quot;, &quot;assignees&quot;: [&quot;Zion&quot;, &quot;Irene&quot;, &quot;Candice&quot;, &quot;Dome&quot;]}], &quot;Dome&quot;: [{&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;LEAN-02&quot;, &quot;project&quot;: &quot;Lean Organization&quot;, &quot;task&quot;: &quot;Launch Individual Communication&quot;, &quot;supporter&quot;: &quot;HR Team&quot;, &quot;deadline&quot;: &quot;2026-05-25&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Ying&quot;, &quot;Zion&quot;, &quot;Irene&quot;, &quot;Candice&quot;, &quot;Dome&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;PROB-03&quot;, &quot;project&quot;: &quot;Probation Tracking&quot;, &quot;task&quot;: &quot;Follow up employees/managers to submit probation goals in OA&quot;, &quot;supporter&quot;: &quot;Zion / Candice / Irene / Dome&quot;, &quot;deadline&quot;: &quot;2026-06-06&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;Zion&quot;, &quot;Irene&quot;, &quot;Candice&quot;, &quot;Dome&quot;]}, {&quot;bucket&quot;: &quot;future3&quot;, &quot;task_id&quot;: &quot;PROB-04&quot;, &quot;project&quot;: &quot;Probation Tracking&quot;, &quot;task&quot;: &quot;Track probation progress regularly and maintain reminders&quot;, &quot;supporter&quot;: &quot;Zion / Candice / Irene / Dome&quot;, &quot;deadline&quot;: &quot;2026-06-12&quot;, &quot;status&quot;: &quot;Not Started&quot;, &quot;assignees&quot;: [&quot;Zion&quot;, &quot;Irene&quot;, &quot;Candice&quot;, &quot;Dome&quot;]}], &quot;HR Team&quot;: [], &quot;HQ HR Team&quot;: [{&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;ZEN-06&quot;, &quot;project&quot;: &quot;Zenian Promotion&quot;, &quot;task&quot;: &quot;Release Assessment Result&quot;, &quot;supporter&quot;: &quot;Committee / HQ HR Team&quot;, &quot;deadline&quot;: &quot;2026-06-05&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;HQ HR Team&quot;, &quot;Committee&quot;]}, {&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;ZEN-07&quot;, &quot;project&quot;: &quot;Zenian Promotion&quot;, &quot;task&quot;: &quot;Evaluation Results Announcement&quot;, &quot;supporter&quot;: &quot;HQ HR Team&quot;, &quot;deadline&quot;: &quot;2026-06-08&quot;, &quot;status&quot;: &quot;Not Started&quot;, &quot;assignees&quot;: [&quot;HQ HR Team&quot;]}], &quot;Committee&quot;: [{&quot;bucket&quot;: &quot;overdue&quot;, &quot;task_id&quot;: &quot;ZEN-06&quot;, &quot;project&quot;: &quot;Zenian Promotion&quot;, &quot;task&quot;: &quot;Release Assessment Result&quot;, &quot;supporter&quot;: &quot;Committee / HQ HR Team&quot;, &quot;deadline&quot;: &quot;2026-06-05&quot;, &quot;status&quot;: &quot;In Progress&quot;, &quot;assignees&quot;: [&quot;HQ HR Team&quot;, &quot;Committee&quot;]}], &quot;Zenian Xie&quot;: [], &quot;Other&quot;: []}}</script>
+  <script>
+    const buttons = [...document.querySelectorAll('.filter')];
+    const rows = [...document.querySelectorAll('tbody tr[data-bucket]')];
+    const cards = [...document.querySelectorAll('.person-card')];
+
+    function applyFilter(filter) {
+      buttons.forEach(btn => btn.classList.toggle('active', btn.dataset.filter === filter));
+      rows.forEach(row => {
+        const byBucket = row.dataset.bucket === filter;
+        const byPerson = (row.dataset.people || '').split(' ').includes(filter);
+        row.classList.toggle('hidden', !(filter === 'all' || byBucket || byPerson));
+      });
+      cards.forEach(card => {
+        const person = card.dataset.person;
+        const tasks = [...card.querySelectorAll('.task-card')];
+        let visible = false;
+        tasks.forEach(task => {
+          const byBucket = task.classList.contains(filter);
+          const byPerson = person === filter;
+          const show = filter === 'all' || byBucket || byPerson;
+          task.classList.toggle('hidden', !show);
+          visible = visible || show;
+        });
+        card.classList.toggle('hidden', !visible);
+      });
+    }
+
+    buttons.forEach(btn => btn.addEventListener('click', () => applyFilter(btn.dataset.filter)));
+    document.querySelectorAll('.person-head').forEach(btn => {
+      btn.addEventListener('click', () => btn.closest('.person-card').classList.toggle('collapsed'));
+    });
+  </script>
+</body>
+</html>
